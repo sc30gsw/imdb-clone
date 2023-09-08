@@ -11,7 +11,6 @@ const fetchMovies = async (genre: string): Promise<Movie[]> => {
     )
 
     const data = await res.json()
-    console.log('🚀 ~ file: page.tsx:14 ~ fetchMovies ~ data:', data)
 
     const results: Movie[] = data.results
     return results
